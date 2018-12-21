@@ -8,7 +8,7 @@
 <body>
   <div class="nav">
     <ul class="nav">
-      <li class="nav"><a href="https://tnargmada.github.io/untangling-entanglement/" class="nav">Home</a></li>
+      <li class="nav"><a href="homepage.html" class="nav">Home</a></li>
       <li id="current" class="nav"><a href="game.html" class="nav">Quantum Tron</a></li>
       <li class="nav"><a href="guide.html" class="nav">Guide</a></li>
       <li class="nav"><a href="experts.html" class="nav">Interviews</a></li>
@@ -16,8 +16,13 @@
   </div>
 
   <div class="game">
-    <p>(PLACEHOLDER)</p>
-    <img src="images/quantumtron.jpg" width="641" height="481"></img>
+    <canvas id="gameCanvas" width="960" height="640"/>
+
+    <script src="js/graphicsCommon.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/main.js"></script>
   </div>
 
 </body>
