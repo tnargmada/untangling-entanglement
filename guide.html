@@ -17,29 +17,111 @@
 
   <div class="guide">
     <ul>
-      <li>Superposition (as related to the Tron game)
+      <li>Classical
         <ul>
-          <li>how the bike is in multiple places at once</li>
-          <li>what actually behaves this way in the real world</li>
+          <li>How it works
+            <ul>
+              <li>Data is stored in bits, which are binary (off or on, 0 or 1)</li>
+              <li>There are a number of actions that you can apply to a bit: switch it to the other value, AND, OR, etc</li>
+              <li>This is implemented with electricity, and this is how your computer works</li>
+              <li>With Tron, the positions of the motorcycles are saved as bits, and where they go next is based on calculations, which are series of gates, performed on these bits.</li>
+              <li>Computers have a lot of bits. To show how many bits you need for stuff, a letter is represented as 8 bits. One second of high-quality MP3 audio is 40KB, which is 40,000 bytes, or 320,000 bits. A 200GB hard drive is 1,600,000,000,000 (1.6 quintillion)</li>
+            </ul>
+          </li>
+          <li>Where it fails
+            <ul>
+              <li>Computers are really good but they’re not perfect</li>
+              <li>In our modern computers, a bit is stored in a transistor, which is essentially a switch. Now, if there are 1.6 quintillion switches in your computer, these must be pretty small switches</li>
+              <li>The problem is that they are getting too small. We’ve made transistors out of single atoms, and now we can’t really make them smaller for much longer</li>
+              <li>Computers have been getting much more powerful, and we depend on that progress. Now that progress may slow down or stop</li>
+            </ul>
+          </li>
+          <li>Some alternatives
+            <li>There are some other ways to make progress that don’t require smaller components</li>
+            <li>Specialized chips</li>
+            <li>Analog computing</li>
+            <li>Reversible computing</li>
+            <li>Quantum computing</li>
+          </li>
         </ul>
       </li>
       <br>
-      <li>Entanglement (also with the Tron game)
+      <li>Quantum: Two main advantages
         <ul>
-          <li>what happens when there are multiple splits, and one bike hits another</li>
+          <li>Superposition
+            <ul>
+              <li>The bits, rather than being totally 1 or totally zero, can be essentially between the two, some combination of 1 and some combination of zero</li>
+              <li>This allows them to represent multiple states at once, being between states allows you to manipulate both zero and one simultaneously
+                <ul>
+                  <li>In quantum Tron, the multiple positions of the bike are represented as superpositions of quantum bits</li>
+                </ul>
+              </li>
+              <li>However, they can only be measured as zero or one, with a probability of being measured as either
+                <ul>
+                  <li>This means that if the bit is halfway between zero and one, there is a 50% chance it will be measured as one and 50% that it will be zero
+                    <ul>
+                      <li>50% chance that the bike is in either position</li>
+                    </ul>
+                  </li>
+                  <li>So when you calculate multiple states at once, you only get one answer
+                    <ul>
+                      <li>Your bike actually only went one direction, and you either won or lost in the end</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Entanglement
+            <ul>
+              <li>The state of superposed bits can be dependent on each other
+                <ul>
+                  <li>Two bits can be between 0 and 1, but if one is 1, the other will be zero and vice versa</li>
+                </ul>
+              </li>
+              <li>In Tron, if your bike went through the other bike’s path, your bikes are now entangled
+                <ul>
+                  <li>If the qubits are measured to say that you crashed at that point, then the other bike will be measured to say that it blocked you</li>
+                  <li>If you passed through that point, then the other bike will not have been there.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
       <br>
-      <li>How the game works with these properties
+      <li>The future of this tech
         <ul>
-          <li>what normal bits are like</li>
-          <li>what quantum bits are like</li>
-          <li>how the game is represented with quantum bits</li>
-          <li>note that the game is actually running on a simulation, and that we aren't very far with the real tech yet</li>
+          <li>Approaches
+            <ul>
+              <li>IBM/Google
+                <ul>
+                  <li>5-50 Stable, supercooled qubits, able to perform logic on them</li>
+                </ul>
+              </li>
+              <li>D Wave
+                <ul>
+                  <li>Special-purpose to quantum annealing</li>
+                  <li>Use “flux qubits,” easier to maintain but less robust</li>
+                </ul>
+              </li>
+              <li>Other Proposals</li>
+            </ul>
+          </li>
+          <li>Disadvantages
+            <ul>
+              <li>Errors/Error Correction</li>
+              <li>Logistics of supercooling</li>
+            </ul>
+          </li>
+          <li>Professional Opinions
+            <ul>
+              <li>Optimistic</li>
+              <li>Pessimistic</li>
+            </ul>
+          </li>
         </ul>
       </li>
-      <br>
-      <li>What else the technology can be used for</li>
     </ul>
   </div>
 
