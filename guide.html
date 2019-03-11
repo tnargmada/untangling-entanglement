@@ -6,124 +6,141 @@
 </head>
 
 <body>
-  <div class="nav">
-    <ul class="nav">
-      <li class="nav"><a href="https://tnargmada.github.io/untangling-entanglement/" class="nav">Home</a></li>
-      <li class="nav"><a href="game.html" class="nav">Quantum Tron</a></li>
-      <li id="current" class="nav"><a href="guide.html" class="nav">Guide</a></li>
-      <li class="nav"><a href="experts.html" class="nav">Interviews</a></li>
-    </ul>
+  <div class="header">
+    <div class="title">
+      <h1 class="title">UNTANGLING ENTANGLEMENT</h1>
+    </div>
+
+    <div class="nav">
+      <ul class="nav">
+        <li class="nav"><a href="index.html" class="nav">Home</a></li>
+        <li class="nav"><a href="game.html" class="nav">Quantum Tron</a></li>
+        <li id="current" class="nav"><a href="guide.html" class="nav">Guide</a></li>
+        <li class="nav"><a href="experts.html" class="nav">Interviews</a></li>
+      </ul>
+    </div>
   </div>
 
-  <div class="guide">
-    <ul>
-      <li>Classical
-        <ul>
-          <li>How it works
-            <ul>
-              <li>Data is stored in bits, which are binary (off or on, 0 or 1)</li>
-              <li>There are a number of actions that you can apply to a bit: switch it to the other value, AND, OR, etc</li>
-              <li>This is implemented with electricity, and this is how your computer works</li>
-              <li>With Tron, the positions of the motorcycles are saved as bits, and where they go next is based on calculations, which are series of gates, performed on these bits.</li>
-              <li>Computers have a lot of bits. To show how many bits you need for stuff, a letter is represented as 8 bits. One second of high-quality MP3 audio is 40KB, which is 40,000 bytes, or 320,000 bits. A 200GB hard drive is 1,600,000,000,000 (1.6 quintillion)</li>
-            </ul>
-          </li>
-          <li>Where it fails
-            <ul>
-              <li>Computers are really good but they’re not perfect</li>
-              <li>In our modern computers, a bit is stored in a transistor, which is essentially a switch. Now, if there are 1.6 quintillion switches in your computer, these must be pretty small switches</li>
-              <li>The problem is that they are getting too small. We’ve made transistors out of single atoms, and now we can’t really make them smaller for much longer</li>
-              <li>Computers have been getting much more powerful, and we depend on that progress. Now that progress may slow down or stop</li>
-            </ul>
-          </li>
-          <li>Some alternatives
-            <li>There are some other ways to make progress that don’t require smaller components</li>
-            <li>Specialized chips</li>
-            <li>Analog computing</li>
-            <li>Reversible computing</li>
-            <li>Quantum computing</li>
-          </li>
-        </ul>
-      </li>
+  <div class="guidewrapper">
+    <div class="sidebar">
+      <li class="sidebar" style="font-size:20px;"><b>JUMP TO:</b></li>
+      <li class="sidebar"><a href="#thebit" class="sidebar">THE BIT</a></li>
+      <li class="sidebar"><a href="#thequbit" class="sidebar">THE QUBIT</a></li>
+      <li class="sidebar"><a href="#entanglement" class="sidebar">ENTANGLEMENT</a></li>
+      <li class="sidebar"><a href="#interference" class="sidebar">INTERFERENCE</a></li>
+      <li class="sidebar"><a href="#future" class="sidebar">THE FUTURE OF QUANTUM COMPUTING</a></li>
+    </div>
+    <div class="guide">
+      <div class="guideintro">
+        <h1 class="center">What is Quantum Computing?</h1>
+        <p class="center">Simply put, quantum computing aims to create computers that harness quantum mechanical properties
+        to perform calculations. This guide outlines the reason we are developing quantum computers, what advantages they give
+        over classical computers, and what the future holds for quantum computing. You can read this guide from the start, or
+        click the topic you're most curious about on the left.</p>
+      </div>
       <br>
-      <li>Quantum: Two main advantages
-        <ul>
-          <li>Superposition
-            <ul>
-              <li>The bits, rather than being totally 1 or totally zero, can be essentially between the two, some combination of 1 and some combination of zero</li>
-              <li>This allows them to represent multiple states at once, being between states allows you to manipulate both zero and one simultaneously
-                <ul>
-                  <li>In quantum Tron, the multiple positions of the bike are represented as superpositions of quantum bits</li>
-                </ul>
-              </li>
-              <li>However, they can only be measured as zero or one, with a probability of being measured as either
-                <ul>
-                  <li>This means that if the bit is halfway between zero and one, there is a 50% chance it will be measured as one and 50% that it will be zero
-                    <ul>
-                      <li>50% chance that the bike is in either position</li>
-                    </ul>
-                  </li>
-                  <li>So when you calculate multiple states at once, you only get one answer
-                    <ul>
-                      <li>Your bike actually only went one direction, and you either won or lost in the end</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Entanglement
-            <ul>
-              <li>The state of superposed bits can be dependent on each other
-                <ul>
-                  <li>Two bits can be between 0 and 1, but if one is 1, the other will be zero and vice versa</li>
-                </ul>
-              </li>
-              <li>In Tron, if your bike went through the other bike’s path, your bikes are now entangled
-                <ul>
-                  <li>If the qubits are measured to say that you crashed at that point, then the other bike will be measured to say that it blocked you</li>
-                  <li>If you passed through that point, then the other bike will not have been there.</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <br>
-      <li>The future of this tech
-        <ul>
-          <li>Approaches
-            <ul>
-              <li>IBM/Google
-                <ul>
-                  <li>5-50 Stable, supercooled qubits, able to perform logic on them</li>
-                </ul>
-              </li>
-              <li>D Wave
-                <ul>
-                  <li>Special-purpose to quantum annealing</li>
-                  <li>Use “flux qubits,” easier to maintain but less robust</li>
-                </ul>
-              </li>
-              <li>Other Proposals</li>
-            </ul>
-          </li>
-          <li>Disadvantages
-            <ul>
-              <li>Errors/Error Correction</li>
-              <li>Logistics of supercooling</li>
-            </ul>
-          </li>
-          <li>Professional Opinions
-            <ul>
-              <li>Optimistic</li>
-              <li>Pessimistic</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+      <div class="guidebody">
+        <h2 id="thebit">The Bit</h2>
+        <p>As you've probably heard before, computers run on 0s and 1s. These 0s and 1s are called "bits", and are represented
+          by switches in your computer that can be on (1) or off (0). Using these switches, called transistors, we can
+          represent any type of data, from a simple number to an MP3 file.
+        <br><br>
+          Because the bits that we use have two possible states, the data that they encode is in a binary, or base-2 number
+          system. The numbers we use are in base-10, meaning each digit has 10 possible states (0-1-2-3-4-5-6-7-8-9). You may
+          have learned in elementary schools about the "ones" digit, the "tens" digit, and the "hundreds" digit. Each digit is
+          a different power of ten. In binary, each digit is a different power of two, so we have the ones digit, the twos
+          digit, the fours digit, the eights digit, and so on. For example, the base-10 number 23 would be written in binary as
+          10111, because 16+0+4+2+1 equals 23.
+        <br><br>
+          All of our data is represented using binary numbers, but some things take many more digits, and therefore many more
+          bits, than others. While the number 23 can be represented with just 5 bits, one second of high-quality MP3 audio is
+          40 kilobytes, which is 40,000 bytes, or 320,000 bits. A 200-gigabyte hard drive, which is the storage space of an
+          average laptop, contains 1.6 quintillion bits.</p>
+
+        <p><h4>Manipulating Bits</h4>
+        <img id="halfadder" src="http://www.pages.drexel.edu/~rcs87/HalfAdder.png" alt="Half Adder Circuit">
+          In a classical computer, a calculation can be performed on a series of bits by running an electrical current through
+          the transistors representing the bits in order to create circuits and perform calculations. These circuits can be
+          broken down into logical gates, such as AND, OR, and more. These logical gates and transistors make up the brain of
+          your computer at the lowest level. To give an example of a low-level classical program, here is the circuit used to
+          add two bits together. This is called a "half-adder."</p>
+          <p>The "XOR" gate outputs 1 if one but not both of the inputs are one. This means that if A or B is one, that
+          is if your input is 1 + 0 or 0 + 1, then the sum will be 1. If your input is 0 + 0 or 1 + 1, the sum will be 0.
+          However, because of the AND gate, if your input is 1 + 1, the carry will be 1. In other words, 0+0=00, 1+0=01, 0+1=01,
+          and 1+1=10.</p>
+          <p>The point is that bits can be manipulated to give the answer to a question. In our everyday computers, this is
+            done with circuitry and electricity.</p>
+
+        <p><h4>A Bit Of A Problem</h4>
+           The first computer to use transistors was created in 1955 and contained only 200 transistors. By 1965, transistors
+           had shrunk  significantly, and Gordon Moore, a computer scientist who went on to co-found Intel, noticed that if
+           the trend continued, the number of transistors on a computer chip would double every year. In 1975, he revised his
+           prediction to every two years. This prediction has been dubbed Moore's Law, and has become the backbone of the
+           electronic computing industry. Companies plan their research and development based on this law, and the steady
+           increase in computing power that we see as consumers is a direct result of this.
+        <br><br>
+           The average laptop today contains at least 1.6 quintillion bits of data. If these bits are being represented by
+           physical switches, one can imagine how small these switches must be. In fact, in 2012, a team succeeded in creating
+           a transistor from a single atom.
+        <br><br>
+           We can't make our transistors much smaller, so if we want our computers to continue to increase in power, we will
+           likely have to begin investigating more efficient ways to compute with the number of bits that we already have.</p>
+
+        <h4>Alternative Bits</h4>
+          <p>Many researchers are working on different ways to increase the power of our computers without needing any more bits.
+          Here are a few approaches, and links to learn more about them:</p>
+          <p style="margin-left: 40px"><u>Specialized chips</u><br>
+          The computers we use are built around Central Processing Units, general-purpose logical units that perform all the
+          math and complicated operations inside the computer. Most computers also have a Graphical Processing Unit, which is
+          specialized for the rendering of graphical elements on your screen. Recently, there has been a push to develop more
+          specialized chips, since a general-purpose CPU is less efficient than chips designed for a specific task. This
+          movement has mainly been interested in specialized artificial intelligence chips, although it is not limited to this
+          application.
+          <br><br>
+          <a href="https://phys.org/news/2018-10-brain-inspired-architecture-advance-ai.html">Learn more about specialized chips</a>
+          <br><br>
+          <u>Analog computing</u><br>
+          Instead of using 0s and 1s, analog computing proposes a spectrum of values for each bit, meaning that you can have a
+          0, a 1, or any number in between. This allows for more complex data to be represented much more easily. Analog
+          computers are very efficient in simulating physical systems, but they are prone to inaccuracies. The appeal of a
+          binary system is that there is a fairly large tolerance for error, because the electric flow only has to be on or off.
+          It doesn't matter if it's not as strong as it should be. However, analog computers are based on having a full range
+          of values to work with, so even slight errors matter. For this reason, analog computers can only be used in
+          applications where there is an amount of tolerable inaccuracy.
+          <br><br>
+          <a href="http://news.mit.edu/2016/analog-computing-organs-organisms-0620">Learn more about analog computing</a>
+          <br><br>
+          <u>Reversible computing</u><br>
+          One fundamental concept of physics is that information cannot be destroyed, but can only change form. In other words,
+          there is a record of everything that has ever happened, if you have the tools to analyze the universe down to the
+          state of each atom. Because of this law, when information is deleted on your computer, it isn't actually destroyed;
+          instead it is converted into heat. This is why computers overheat. Essentially, reversible computing seeks to prevent
+          this heat loss and drastically improve the efficiency of computers, allowing us to do more calculations with less
+          energy. This is accomplished by using only reversible operations, meaning that no information is ever lost, since you
+          can undo everything you've done. While it is a challenge to write reversible programs, this approach is viable and is
+          being researched thoroughly.
+          <br><br>
+          <a href="https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible">Learn more about reversible computing</a>
+        </p>
+        <p>The final alternative approach is of course quantum computing, which will be the focus of the rest of this guide.</p>
+        <br>
+
+        <h2 id="thequbit">The Qubit</h2>
+        <p>Quantum computing proposes a new definition of a bit based on quantum mechanics. This is the most revolutionary of
+          the alternative computing methods, and perhaps the most promising. Quantum computers are made up of quantum bits, or
+          qubits for short, rather than classical bits. These qubits have an important quality: superposition.</p>
+        <h4>Superposition</h4>
+        <p>Superposition is at the heart of what makes quantum physics different from classical physics, and it is also the
+          main appeal of quantum computers. A quantum bit in superposition is a combination of 1 and 0. It is between the two
+          states, but it can only be measured as either a 0 or a 1. This is a phenomenon that is completely unique to quantum
+          physics, and it is difficult to explain, but even harder to understand. Richard Feynman, a famous quantum physicist,
+          is often credited as saying "If you think you understand quantum mechanics, you don't understand quantum mechanics."</p>
+        <p>However, that doesn't stop us from taking advantage of it. By applying operations (logic gates) to qubits in
+          superposition, we are able to manipulate a superposition of many different inputs, giving many different answers. </p>
+
+      </div>
+    </div> <!--guide-->
+  </div> <!--wrapper-->
 
 </body>
 </html>
