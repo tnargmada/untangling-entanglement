@@ -7,16 +7,20 @@
 
 <body>
   <div class="header">
+    <div class="logo">
+      <img id="logo" src="images/simonsays.png" alt="Logo">
+    </div>
+
     <div class="title">
-      <h1 class="title">UNTANGLING ENTANGLEMENT</h1>
+      <h1 class="title">UNTANGLING<br>ENTANGLEMENT</h1>
     </div>
 
     <div class="nav">
       <ul class="nav">
         <li class="nav"><a href="index.html" class="nav">Home</a></li>
-        <li class="nav"><a href="game.html" class="nav">Quantum Tron</a></li>
+        <li class="nav"><a href="quantumgame.html" class="nav">Quantum Video Games</a></li>
         <li id="current" class="nav"><a href="guide.html" class="nav">Guide</a></li>
-        <li class="nav"><a href="experts.html" class="nav">Interviews</a></li>
+        <li class="nav"><a href="more.html" class="nav">More</a></li>
       </ul>
     </div>
   </div>
@@ -26,27 +30,24 @@
       <li class="sidebar" style="font-size:20px;"><b>JUMP TO:</b></li>
       <li class="sidebar"><a href="#thebit" class="sidebar">THE BIT</a></li>
       <li class="sidebar"><a href="#thequbit" class="sidebar">THE QUBIT</a></li>
-      <li class="sidebar"><a href="#entanglement" class="sidebar">ENTANGLEMENT</a></li>
-      <li class="sidebar"><a href="#interference" class="sidebar">INTERFERENCE</a></li>
       <li class="sidebar"><a href="#future" class="sidebar">THE FUTURE OF QUANTUM COMPUTING</a></li>
     </div>
     <div class="guide">
       <div class="guideintro">
         <h1 class="center">What is Quantum Computing?</h1>
-        <p class="center">Simply put, quantum computing aims to create computers that harness quantum mechanical properties
+        <p id="thebit" class="center">Simply put, quantum computing aims to create computers that harness quantum mechanical properties
         to perform calculations. This guide outlines the reason we are developing quantum computers, what advantages they give
         over classical computers, and what the future holds for quantum computing. You can read this guide from the start, or
         click the topic you're most curious about on the left.</p>
       </div>
-      <br>
       <div class="guidebody">
-        <h2 id="thebit">The Bit</h2>
+        <h2>The Bit</h2>
         <p>As you've probably heard before, computers run on 0s and 1s. These 0s and 1s are called "bits", and are represented
           by switches in your computer that can be on (1) or off (0). Using these switches, called transistors, we can
           represent any type of data, from a simple number to an MP3 file.
         <br><br>
           Because the bits that we use have two possible states, the data that they encode is in a binary, or base-2 number
-          system. The numbers we use are in base-10, meaning each digit has 10 possible states (0-1-2-3-4-5-6-7-8-9). You may
+          system. The numbers we use every day are in base-10, meaning each digit has 10 possible states (0-1-2-3-4-5-6-7-8-9). You may
           have learned in elementary schools about the "ones" digit, the "tens" digit, and the "hundreds" digit. Each digit is
           a different power of ten. In binary, each digit is a different power of two, so we have the ones digit, the twos
           digit, the fours digit, the eights digit, and so on. For example, the base-10 number 23 would be written in binary as
@@ -58,7 +59,7 @@
           average laptop, contains 1.6 quintillion bits.</p>
 
         <p><h4>Manipulating Bits</h4>
-        <img id="halfadder" src="http://www.pages.drexel.edu/~rcs87/HalfAdder.png" alt="Half Adder Circuit">
+        <img id="halfadder" src="images/halfadder.jpg" alt="Half Adder Circuit">
           In a classical computer, a calculation can be performed on a series of bits by running an electrical current through
           the transistors representing the bits in order to create circuits and perform calculations. These circuits can be
           broken down into logical gates, such as AND, OR, and more. These logical gates and transistors make up the brain of
@@ -80,7 +81,7 @@
            increase in computing power that we see as consumers is a direct result of this.
         <br><br>
            The average laptop today contains at least 1.6 quintillion bits of data. If these bits are being represented by
-           physical switches, one can imagine how small these switches must be. In fact, in 2012, a team succeeded in creating
+           physical switches, you can imagine how small these switches must be. In fact, in 2012, a team succeeded in creating
            a transistor from a single atom.
         <br><br>
            We can't make our transistors much smaller, so if we want our computers to continue to increase in power, we will
@@ -120,23 +121,170 @@
           can undo everything you've done. While it is a challenge to write reversible programs, this approach is viable and is
           being researched thoroughly.
           <br><br>
-          <a href="https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible">Learn more about reversible computing</a>
+          <a  id="thequbit" href="https://spectrum.ieee.org/computing/hardware/the-future-of-computing-depends-on-making-it-reversible">Learn more about reversible computing</a>
         </p>
         <p>The final alternative approach is of course quantum computing, which will be the focus of the rest of this guide.</p>
         <br>
 
-        <h2 id="thequbit">The Qubit</h2>
+        <h2>The Qubit</h2>
         <p>Quantum computing proposes a new definition of a bit based on quantum mechanics. This is the most revolutionary of
           the alternative computing methods, and perhaps the most promising. Quantum computers are made up of quantum bits, or
           qubits for short, rather than classical bits. These qubits have an important quality: superposition.</p>
         <h4>Superposition</h4>
-        <p>Superposition is at the heart of what makes quantum physics different from classical physics, and it is also the
-          main appeal of quantum computers. A quantum bit in superposition is a combination of 1 and 0. It is between the two
-          states, but it can only be measured as either a 0 or a 1. This is a phenomenon that is completely unique to quantum
-          physics, and it is difficult to explain, but even harder to understand. Richard Feynman, a famous quantum physicist,
-          is often credited as saying "If you think you understand quantum mechanics, you don't understand quantum mechanics."</p>
+        <p>Superposition is at the heart of what makes quantum physics different from classical physics, and it is also what
+          gives quantum computers their advantage. A quantum bit in superposition is a combination of 1 and 0; it is between
+          the two states, but it can only be measured as either a 0 or a 1. One common analogy is to imagine a spinning coin.
+          While it spins, it could be said to be between heads and tails, but when you "measure" it (that is, when it stops
+          spinning), it can only be one of the two. This is a phenomenon that is completely unique to quantum physics, difficult
+          to explain, and even harder to understand. Richard Feynman, a famous quantum physicist, is often credited as saying
+          "If you think you understand quantum mechanics, you don't understand quantum mechanics."</p>
+
         <p>However, that doesn't stop us from taking advantage of it. By applying operations (logic gates) to qubits in
-          superposition, we are able to manipulate a superposition of many different inputs, giving many different answers. </p>
+          superposition, we are able to manipulate a superposition of many different inputs, giving many different answers.</p>
+        <div class="center">
+          <img class="basicgame" src="images/basic1.png" alt="Simon Says Screenshot" style="margin: 20px;">
+          <img class="basicgame" src="images/basic4.png" alt="Simon Says Screenshot" style="margin: 20px;">
+          <img class="basicgame" src="images/basic3.png" alt="Simon Says Screenshot" style="margin: 20px;">
+        </div>
+        <p>This is Quantum Simon Says, a game that runs on a (simulated) quantum computer. You can learn more about how to
+          play <a href="quantumgame.html">here</a>. The game works with two qubits, and each square represents a state that the bits could be in (00, 01,
+          10, 11). In a classical computer, the bits would only be in one of these four states, so only one square would be
+          highlighted. However, in a quantum computer, the bits could be in a combination of these states, meaning that multiple
+          squares would be highlighted. The superposition could be equal, meaning that all the squares are highlighted the same,
+          or some squares could be highlighted more heavily, meaning that there is a higher probability that the bits will be
+          measured in that state.</p>
+
+        <div class="note">
+          <h4 class="center">Side Note: Entanglement</h4>
+          <p>If you've been paying very close attention, you might have noticed a disconnect between a superposition of a single
+            qubit, and a superposition of multiple qubits. If you put two bits in superposition between 00 and 11, each bit has
+            a 50% chance of being in 0 or 1. However, if one bit is 1, the other is guaranteed to also be 1, and if one is
+            0, so is the other. This is called entanglement, when the state of one particle, or bit, seems to depend on the
+            state of another. In fact, this dependence continues even if the bits are thousands of miles apart. If you measure
+            one as 1, the other will also collapse to 1, instantaneously. This property was described by Einstein as "spooky
+            action at a distance," and it really turned him off from quantum mechanics, because it seemingly transferred
+            information faster than the speed of light. However, this property cannot actually be used to transfer information,
+            so no laws are broken; it's just spooky.
+          </p>
+        </div>
+
+        <p>This superposition can be used to perform an operation on many inputs at once. Let's say you had a problem that you
+          could only solve by guessing and checking. If the answer you gave was right, it would be marked as true. With a
+          classical computer, you would have to guess answers one by one, until one was marked as true. But with superposition,
+          many answers could be represented at once, and they could all be checked simultaneously, with the correct one being
+          marked as true in one step. Problem solved! Well, it's actually not quite so magical. You're still left with a
+          superposition of all the answers you tried, and while the correct one is the only one that's marked, the only way to
+          see the answers is to measure the qubits, which collapses the superposition, most likely spitting out one of the
+          incorrect answers.</p>
+
+        <p>This is the challenge of quantum computing, because despite being able to check many answers in parallel, only one
+          answer can be extracted. So how do you extract the right one? And furthermore, how do you mark the right one in the
+          first place? Both these questions can be answered using interference, another important quantum property.</p>
+
+        <h4>Interference</h4>
+        <p style="float:left; width: 80%">In the picture from Quantum Simon Says on the right, some squares are highlighted different colors. This represents
+          another aspect of superposition: phase. In quantum mechanics, superpositions are represented as waves, with an
+          amplitude and a phase. You've already seen the amplitude: it's the likelihood that qubits will be found in a certain
+          state when measured, and it's represented in the game by how strongly a square is highlighted. The phase doesn't
+          affect the probabilities, and it doesn't have a good analogy in the "real" world, but it can affect calculations.
+          Superpositions can be combined in certain ways, and when they are,  In Simon Says, opposite phases are represented by
+          opposite, or complementary, colors.</p>
+        <img src="images/random3.png" width="200" height="200" alt="Screenshot">
+
+        <p>Returning to our original problem, we put the qubits into equal superposition of the possible answers. The right
+          answer is marked as correct by flipping the phase. Then, the state 00's phase is also flipped. Then, by combining the
+          states with interference, the only answer left is the <u id="future"></u>correct one.</p>
+          <div class="center">
+            <img class="grovergame" src="images/grover1.png" alt="Simon Says Screenshot" style="margin: 15px;">
+            <img class="groverarrow" src="images/arrow.jpg" alt="Arrow">
+            <img class="grovergame" src="images/grover2.png" alt="Simon Says Screenshot" style="margin: 15px;">
+            <img class="groverarrow" src="images/arrow.jpg" alt="Arrow">
+            <img class="grovergame" src="images/grover3.png" alt="Simon Says Screenshot" style="margin: 15px;">
+            <img class="groverarrow" src="images/arrow.jpg" alt="Arrow">
+            <img class="grovergame" src="images/grover4.png" alt="Simon Says Screenshot" style="margin: 15px;">
+          </div>
+
+        <p>This technique is a simplification of Grover's search algorithm, developed by Lov Grover in 1996. For a more in-depth
+          explanation of this algorithm, and a different representation of interference and superposition, check out
+          <a href="https://davidbkemp.github.io/QuantumComputingArticle/index.html">this two-part interactive quantum computing
+          introduction.</a></p>
+
+        <h2>The Future</h2>
+        <p>Quantum computing is in early stages, and its future is uncertain. Potential applications of quantum computers
+          include improvements in machine learning, more secure cryptography and communications methods, modeling of molecules
+          for applications in biology and medicine, and much more. Many people insist that this technology will become extremely
+          powerful in the next few years, and many also claim that it will never really gain footing outside of very specialized
+          research applications. In any case, there is certainly a lot of interest in the field, from
+          <a href="https://www.forbes.com/sites/alexknapp/2018/12/20/congress-just-passed-a-bill-to-accelerate-quantum-computing-heres-what-it-does/#58e389842ef8">the government</a>
+          to <a href="http://techgenix.com/quantum-computing-startups/">small startups</a>. This section will break down different
+          approaches to quantum computing, some major players in the quantum race, and some professional opinions about the future
+          of the field.</p>
+
+        <h4>Quantum Approaches</h4>
+
+        <p>We've talked about how quantum computers work theoretically, but what do the actual computers look like?<br>
+          There are a few approaches so far, and it's not clear which will prevail. The top two approaches so far have been
+          superconducting quantum computers and ion-trap quantum computers. In the video on the right, Seth Lloyd, quantum mechanical engineer and professor
+          at MIT, talks about the current approaches to quantum computing.</p>
+
+        <p style="margin-left: 40px; margin-right: 20px; float:left; width:70%"><u>Superconducting Quantum Computers</u><br>
+          This approach is being used by private companies like IBM and Google. They have created quantum computers on the
+          order of about 50 qubits, which work for a very short amount of time before they "decohere," and the superpositions
+          break down. The advantage of superconducting circuits is that they can be etched on chips, just like current hardware,
+          allowing the bits to be very flexible in their arrangement. The downside is that it takes an enormous amount of energy
+          to cool the qubits down, and the coherence times are very short. Basically, superconducting qubits are more flexible,
+          but less stable.<br>
+          IBM has become the first company with a cloud-based quantum computer available to the public, and
+          <a href="https://www.research.ibm.com/ibm-q/learn/what-is-ibm-q/">they describe their approach well.</a>
+          If you want to try messing around with one of their quantum computers, try their
+          "<a href="https://quantumexperience.ng.bluemix.net/qx/editor">Quantum Composer</a>."</p>
+
+          <video width="229" height="250" controls>
+            <source src="videos/quantumapproaches.mov" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+
+        <p style="margin-left: 40px"><u>Ion Trap Quantum Computers</u><br>
+          Ion-trap quantum computers use individual atoms as their qubits, exciting them to represent a 0 or a 1. This approach
+          is much more stable and less sensitive than superconducting chips, and thus has longer coherence times, but it is less
+          flexible in the circuit design. One important pioneer in this technology is IonQ, a startup company that has designed
+          an 11-qubit computer that the public can request access to. Check them out <a href="https://ionq.co">here</a>.</p>
+
+        <p style="margin-left: 40px"><u>Topological Quantum Computers</u><br>
+          Topological quantum computing is probably the most difficult approach so far, because the particles that it proposes
+          to use as qubits may not even exist. However, these computers would be extremely coherent and not very sensitive at all
+          to the outside world, while still being flexible in their circuit design. Microsoft has decided upon this approach, but
+          has not yet developed a working prototype, or at least hasn't released any information about it if they have. Learn
+          more about topological computing and their approach
+          <a href="https://www.microsoft.com/en-us/quantum/topological-qubit">on their website</a>.</p>
+
+        <h4>Professional Opinions</h4>
+        <div class="center">
+          Aram Harrow, quantum computing faculty at MIT: <a href="https://www.youtube.com/watch?v=dU8_wSDhIFU">What Will We Do With Quantum Computers?</a><br><br>
+          <video class="opinions" width="229" height="250" controls>
+            <source src="videos/quantumfuture.mov" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+          <audio class="opinions" controls src="audio/quantumfuture.m4a">
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
+        </div>
+        <p>On the left, researcher Seth Lloyd talks about the
+          future of quantum computing. He gives another interview on the same topic <a href="www.youtube.com/watch?v=5xW49CzjhgI">here</a>
+          (notable quote: "If you have the tick-by-tick history of the Dow Jones for the last 50 years, and you say I'd like to find out
+          what a good portfolio would be for me ... with a pretty small quantum computer, the kind we'll have in the next five years or so,
+          you can actually find the answer to that question much more accurately.").
+          On the right, quantum researcher James Wootton talks about what a useful quantum computer is, and
+          when we might see one. See his blog on quantum games and more <a href="https://medium.com/@decodoku">here</a>.
+
+        <p class="center">Mathematician Gil Kalai argues that quantum computing will never work in
+          <a href="https://www.quantamagazine.org/gil-kalais-argument-against-quantum-computers-20180207/">this article</a>.
+
+
+        <p>If you are still curious and want to learn more, head to the "More" tab for links to other resources.</p>
+        <p>If you want to play a game on a quantum computer, head to the "Quantum Video Games" tab.</p>
+
 
       </div>
     </div> <!--guide-->
