@@ -114,6 +114,7 @@ div.hook {
   padding-bottom: 55px;
   text-align: center;
   float: left;
+  margin-bottom: 15px;
 }
 
 div.quotewhite {
@@ -169,6 +170,7 @@ div.guidewrapper, div.gamewrapper {
   padding-top: 800px;
   margin-top: -800px;
   z-index: 1
+  margin-bottom: 3px;
 }
 
 div.sidebar {
@@ -226,6 +228,7 @@ div.more{
   padding-top: 75px;
   padding-bottom: 55px;
   float: left;
+  margin-bottom: 15px;
 }
 
 ul.button {
