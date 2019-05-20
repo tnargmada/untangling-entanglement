@@ -1,4 +1,4 @@
-import QState from './QState.js'
+jimport QState from './QState.js'
 import Complex from './Complex.js'
 import * as QMath from './QMath.js'
 import Measurement, {QStateComponent} from './Measurement.js'
