@@ -1,4 +1,4 @@
-import Complex from './Complex.js'
+import Complex from './Complex.js';
 
 export default {
   ZERO: Complex.ZERO,
