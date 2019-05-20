@@ -1,4 +1,4 @@
-import validateArgs from './utils/validateArgs'
+import validateArgs from './utils/validateArgs';
 import typecheck from './utils/typecheck';
 
 export default class Complex {
