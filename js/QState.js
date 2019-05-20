@@ -1,8 +1,8 @@
-import Measurement, {QStateComponent} from './Measurement.js'
-import Complex from './Complex.js'
-import validateArgs from './utils/validateArgs.js'
+import Measurement, {QStateComponent} from './Measurement.js';
+import Complex from './Complex.js';
+import validateArgs from './utils/validateArgs.js';
 import typecheck from './utils/typecheck.js';
-import Constants from './constants.js'
+import Constants from './constants.js';
 
 function parseBitString(bitString) {
   // Strip optional 'ket' characters to support |0101>
