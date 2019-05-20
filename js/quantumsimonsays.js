@@ -1,4 +1,4 @@
-import Qubits from './index';
+import Qubits from './index.js';
 
 var canvas;
 var canvasContext;
