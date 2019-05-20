@@ -1,5 +1,5 @@
-import validateArgs from './utils/validateArgs';
-import typecheck from './utils/typecheck';
+import validateArgs from './utils/validateArgs.js';
+import typecheck from './utils/typecheck.js';
 
 export default class Complex {
   constructor(real, imaginary) {
