@@ -204,6 +204,12 @@ div.guidebody, div.gamebody {
   margin-left: 50px;
   margin-right: 50px;
 }
+div.canvaswrapper {
+  text-align: center;
+}
+div.canvas {
+  display: inline-block;
+}
 img#halfadder {
   width: 360px;
   height: 250px;

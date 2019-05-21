@@ -28,43 +28,28 @@
   <div class="guidewrapper">
     <div class="sidebar">
       <li class="sidebar" style="font-size:20px;"><b>LINKS:</b></li>
-      <li class="sidebar"><a href="quantumsimonsays.py.zip" class="sidebar" download>DOWNLOAD</a></li>
       <li class="sidebar"><a href="https://github.com/tnargmada/quantumsimonsays" class="sidebar">GITHUB</a></li>
     </div>
 
     <div class="guide">
       <div class="guideintro">
-        <h1 class="center">Quantum Simon Says</h1>
+        <h1 class="center">QROMA</h1>
         <p class="center">Quantum computing is an extremely confusing topic. I believe that packaging it in the form of a game
           is the best way to learn about it. Rather than trying to understand every minute detail, which is near impossible, I
           hope to give you a feel for quantum computing in an accessible and fun way. Games have the power to simplify and abstract
           an idea, while still maintaining its complexity. Anyone can learn something from a game, whether they are a child or an
-          expert on the topic. This page explains how to play the game Quantum Simon Says, and some of the quantum mechanics
-          behind the game. I recommend downloading the game with the link to the left before reading this guide. If you're
-          interested, you can also check out the github page.</p>
+          expert on the topic. This page explains how to play the game QROMA (pronounced "chroma"), and some of the quantum mechanics
+          behind the game. If you're interested, you can also check out the github page to the left.</p>
       </div>
-      <br>
+
+      <div class="canvaswrapper">
+        <div class="canvas">
+          <canvas id="gameCanvas" width="600" height="600"></canvas>
+          <script type="module" src="js/quantumsimonsays.js"></script>
+        </div>
+      </div>
+
       <div class="guidebody">
-        <canvas id="gameCanvas" width="800" height="800"></canvas>
-
-        <script type="module" src="js/quantumsimonsays.js"></script>
-
-        <h4>Download Instructions</h4>
-        <p><u>Mac</u><br>
-          This game was written in python. To download the python file, click "download" to the left, then unzip the file. To install
-          the packages that the game uses, open the Terminal app, and enter the following commands into the terminal:
-        </p>
-        <p class="code">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</p>
-        <p class="code">python get-pip.py</p>
-        <p class="code">sudo pip install pybind pygame projectq</p>
-        <p>Then to launch the game, type:</p>
-        <p class="code">python </p>
-        <p>and drag the file (quantumsimonsays.py) into terminal.</p>
-        <img src="images/terminal1.png" alt="Terminal" height="250">
-        <img src="images/terminal2.png" alt="Terminal" height="250">
-        <p>Then press enter.</p>
-        <br>
-
         <h4>Game Instructions</h4>
         <div class="center">
           <img class="basicgame" src="images/basic1.png" alt="Simon Says Screenshot">
@@ -73,7 +58,7 @@
           <img class="arrow" src="images/arrow.jpg" alt="Arrow">
           <img class="basicgame" src="images/basic3.png" alt="Simon Says Screenshot">
         </div>
-        <p>This is the simplest example of a game in Quantum Simon Says. The goal of the game is to highlight only the square that is
+        <p>This is the simplest example of a game in QROMA. The goal of the game is to highlight only the square that is
           outlined in black. To do this, you can combine squares diagonally: if the squares are the same color, they will combine upwards,
           as you see in this example. "W" combines the squares up and to the right; "S" combines the squares up and to the left.<p>
         <div class="center">
@@ -100,7 +85,7 @@
 
         <h4 style="margin-bottom: 4px">Quantum-Powered</h4>
         <p style="float: left; width: 70%">This game represents a superposition of quantum bits. There's a deeper explanation of this phenomenon under the "Guide" tab,
-          but I'll give you the summary. Each of the squares in Quantum Simon Says represents a binary number, as you can see on the right.
+          but I'll give you the summary. Each of the squares in QROMA represents a binary number, as you can see on the right.
           These numbers are represented by two bits. But these bits are special, because they use a quantum property called superposition,
           which allows them to be between 0 and 1, representing multiple numbers simultaneously. That's why multiple squares can be highlighted
           at the same time. The colors are called the "phase" of the superposition, and when you combine the superposition you are applying an
